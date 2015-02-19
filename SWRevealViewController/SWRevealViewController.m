@@ -626,9 +626,11 @@ const int FrontViewPositionNone = 0xff;
     _rearViewRevealWidth = 260.0f;
     _rearViewRevealOverdraw = 60.0f;
     _rearViewRevealDisplacement = 40.0f;
+    _rearViewRevealAutoresize = YES;
     _rightViewRevealWidth = 260.0f;
     _rightViewRevealOverdraw = 60.0f;
     _rightViewRevealDisplacement = 40.0f;
+    _rightViewRevealAutoresize = YES;
     _bounceBackOnOverdraw = YES;
     _bounceBackOnLeftOverdraw = YES;
     _stableDragOnOverdraw = NO;
@@ -1594,9 +1596,9 @@ const int FrontViewPositionNone = 0xff;
         }
     }
     
-    if (controller == self.rearViewController) {
+    if (controller == self.rearViewController && _rearViewRevealAutoresize) {
         frame.size.width = self.rearViewRevealWidth;
-    } else if (controller == self.rightViewController) {
+    } else if (controller == self.rightViewController && _rightViewRevealAutoresize) {
         // We are right
         frame.origin.x += self.rightViewRevealOverdraw;
         frame.size.width = self.rightViewRevealWidth;

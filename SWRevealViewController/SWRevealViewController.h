@@ -248,6 +248,10 @@ typedef NS_ENUM(NSInteger, SWRevealToggleAnimationType)
 @property (nonatomic) CGFloat rearViewRevealDisplacement;
 @property (nonatomic) CGFloat rightViewRevealDisplacement;  // <-- simetric implementation of the above for the rightViewController
 
+// If YES (the default) rear view will be resized to only the viewable portion, otherwise it fills the entire parent view
+@property (nonatomic) BOOL rearViewRevealAutoresize;
+@property (nonatomic) BOOL rightViewRevealAutoresize;
+
 // Defines a width on the border of the view attached to the panGesturRecognizer where the gesture is allowed,
 // default is 0 which means no restriction.
 @property (nonatomic) CGFloat draggableBorderWidth;
