@@ -1583,7 +1583,6 @@ const int FrontViewPositionNone = 0xff;
     
     UIView *controllerView = controller.view;
     controllerView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
-    controllerView.frame = frame;
     
     if ( [controllerView isKindOfClass:[UIScrollView class]] )
     {
@@ -1595,6 +1594,15 @@ const int FrontViewPositionNone = 0xff;
         }
     }
     
+    if (controller == self.rearViewController) {
+        frame.size.width = self.rearViewRevealWidth;
+    } else if (controller == self.rightViewController) {
+        // We are right
+        frame.origin.x += self.rightViewRevealOverdraw;
+        frame.size.width = self.rightViewRevealWidth;
+    }
+    
+    controllerView.frame = frame;
     [view addSubview:controllerView];
     
     void (^completionBlock)(void) = ^(void)
