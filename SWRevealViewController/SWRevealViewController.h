@@ -314,15 +314,12 @@ typedef NS_ENUM(NSInteger, SWRevealToggleAnimationType)
 
 #pragma mark - SWRevealViewControllerDelegate Protocol
 
-typedef enum
-{
+typedef NS_ENUM( NSInteger, SWRevealControllerOperation) {
     SWRevealControllerOperationNone,
     SWRevealControllerOperationReplaceRearController,
     SWRevealControllerOperationReplaceFrontController,
     SWRevealControllerOperationReplaceRightController,
-    
-} SWRevealControllerOperation;
-
+};
 
 @protocol SWRevealViewControllerDelegate<NSObject>
 
