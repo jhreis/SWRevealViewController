@@ -43,7 +43,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                     </mapView>
                     <navigationItem key="navigationItem" title="Map" id="3AA-T3-Oi6">
-                        <barButtonItem key="leftBarButtonItem" image="reveal-icon.png" style="plain" id="0Cm-Ub-RIS"/>
+                        <barButtonItem key="leftBarButtonItem" image="reveal-icon.png" id="0Cm-Ub-RIS"/>
                     </navigationItem>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <connections>
@@ -73,7 +73,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Color" id="KbI-f5-Z2j">
-                        <barButtonItem key="leftBarButtonItem" image="reveal-icon.png" style="plain" id="Inx-Wl-XPE"/>
+                        <barButtonItem key="leftBarButtonItem" image="reveal-icon.png" id="Inx-Wl-XPE"/>
                     </navigationItem>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
@@ -201,7 +201,7 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="bla-Jd-Bu2"/>
+        <segue reference="OE9-CE-qWx"/>
         <segue reference="8Cx-KQ-7u8"/>
     </inferredMetricsTieBreakers>
 </document>
